@@ -20,13 +20,10 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Login", style: TextStyle(color: Colors.white)),
-      ),
       body: Center(
         child: Column(
           children: [
+            Image.asset("assets/Untitled design - Copy.png",height: 450,fit: BoxFit.fitHeight,),
             tf(controller.nameController, "Username"),
             tf(controller.passwordController, "Password"),
             Container(
@@ -72,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget tf(TextEditingController c, String name) {
     return Container(
       padding: EdgeInsets.all(5),
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.only(top: 10,right: 30,left: 30,bottom: 10),
       height: 70,
       child: TextField(
         controller: c,

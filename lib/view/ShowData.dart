@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/model/contactModel.dart';
-
 import '../controller/database_controller.dart';
 import '../model/updateData.dart';
 import 'LoginPage.dart';
